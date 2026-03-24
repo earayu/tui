@@ -1,0 +1,56 @@
+/* Playground layout & accent cells */
+#intro {
+    margin-bottom: 1;
+}
+
+.tab-body {
+    padding: 1 0;
+    height: 1fr;
+}
+
+#color-grid {
+    grid-size: 2 2;
+    grid-gutter: 1 2;
+    height: auto;
+    margin: 1 0;
+}
+
+.cell {
+    padding: 1 2;
+    text-align: center;
+    border: heavy $primary;
+}
+
+.cell-a {
+    background: $primary 15%;
+    color: $primary;
+}
+
+.cell-b {
+    background: $secondary 15%;
+    color: $secondary;
+}
+
+.cell-c {
+    background: $success 15%;
+    color: $success;
+}
+
+.cell-d {
+    background: $warning 15%;
+    color: $warning;
+}
+
+DataTable {
+    height: 1fr;
+    border: tall $boost;
+}
+
+RichLog {
+    height: 1fr;
+    border: tall $boost;
+}
+
+ProgressBar {
+    margin-top: 1;
+}

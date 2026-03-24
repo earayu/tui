@@ -36,6 +36,12 @@ Temporary Items
 logs/
 .cache/
 
+# Python / tooling
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.hypothesis/
+
 # Python
 __pycache__/
 *.py[cod]
