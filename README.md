@@ -8,16 +8,18 @@
 - 依赖管理：**uv**
 
 ```bash
-make install   # 或: uv sync
-make dev       # Textual 开发模式（可开控制台）
+make install   # 或: uv sync（会装 dev 组，含 textual-dev）
+make dev       # `textual run --dev`（需 dev 依赖里的 textual-dev）
 make run       # 普通运行: python -m tui
 ```
+
+Textual 8 主包不附带 `textual` 可执行文件；**textual-dev** 提供 `textual run`、`textual console` 等，已写入 dev 依赖。
 
 ## 常用命令
 
 | 命令        | 说明        |
 | ----------- | ----------- |
-| `make dev`  | `textual run --dev`，调样式/布局方便 |
+| `make dev`  | `textual run --dev`，热重载 / 开发选项 |
 | `make test` | pytest      |
 | `make lint` | ruff        |
 
